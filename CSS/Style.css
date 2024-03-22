@@ -19,6 +19,10 @@ a{
     cursor: pointer;
     color: blue;
 }
+/*quita puntos*/
+ul{
+    list-style: none;
+}
 /*HEADER*/
 header {
     position: absolute;
@@ -53,7 +57,7 @@ header nav li{
 /*RESPONSIVE*/
 @media(max-width:1000px){
     header{
-        padding: 20px 50px;
+        padding: 80px 50px;
     }
 
 }
@@ -87,6 +91,8 @@ header nav li{
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-clip: content-box;
+    background-position: center;
 
 }
 
@@ -98,6 +104,251 @@ header nav li{
     background-color: black;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    content: '';
+    opacity: .5;
 
+}
+
+@media(max-width:600px) {
+    .banner h1{
+        font-size: 30px;
+    }
+    
+    .banner h2{
+        font-size: 20px;
+    }
+    
+    .banner a.banner-btn{
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+    
+}
+
+.banner h1{
+    margin-top: 10%;
+    margin-bottom: 10px;
+    font-size: 65px;
+}
+
+.banner h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.banner a.banner-btn{
+    text-transform: uppercase;
+    background: cornflowerblue;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+section{
+    /*FLEX*/
+    display:-webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100PX;
+
+}
+
+
+@media(max-width:600px) {
+    section{
+        padding: 100px 50px;
+    }
+    
+}
+
+/*DIOS ZORO*/
+.dios-contenido{
+    display:-webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+
+}
+
+.dios-titulo{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.dios-contenido li{
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.dios-izq{
+    background-image: url("../IMG/d89bb65887f35025df6f8d783c3ed0f7.gif");
+    flex-basis: 40%;
+}
+
+.dios-der{
+    flex-basis: 60%;
+}
+
+.dios-contenido p{
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-left: 0;
+}
+
+.dios-contenido h2{
+    margin-bottom: 2%;
+}
+
+.dios-btn{
+    text-transform: uppercase;
+    background: cornflowerblue;
+    padding: 15px 30px;
+    border-radius: 60px;
+    font-size: 15px;
+}
+
+@media(max-width:600px) {
+    .dios-izq, .dios-der{
+        flex-basis: 100%;
+    }
+
+    .dios-contenido p {
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+.marina-contenido{
+    display:-webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+
+}
+
+.marina-titulo{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.marina-contenido li{
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.marina-izq{
+    background-image: url("../IMG/LOGITO.webp");
+    flex-basis: 40%;
+}
+
+.marina-der{
+    flex-basis: 60%;
+}
+
+.marina-contenido p{
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-left: 0;
+}
+
+.marina-contenido h2{
+    margin-bottom: 2%;
+}
+
+.marina-btn{
+    text-transform: uppercase;
+    background: cornflowerblue;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+@media(max-width:600px) {
+    .marina-izq, .marina-der{
+        flex-basis: 100%;
+    }
+
+    .marina-contenido p {
+        text-align: center;
+    }
+    
+}
+
+.mugiwaras{
+    background-color: rgb(128, 215, 218);
+}
+
+.mugiwaras-contenido{
+    display:-webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.mugiwaras-contenido li{
+    flex-basis: 33%;
+    /*arriba abajo-izq der*/
+    padding: 0 30px;
+    text-align: center;
+}
+
+.mugiwaras-titulo{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.mugiwaras-contenido li h4{
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+@media(max-width:600px) {
+    .mugiwaras-contenido li {
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+
+    .mugiwaras-contenido li p {
+        text-align: justify;
+    }
+    
+}
+
+footer{
+    display:-webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: aquamarine;
+    color: rgb(0, 0, 0);
+    padding: 60px 0;
 }
